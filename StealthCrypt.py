@@ -1,10 +1,40 @@
-from tkinter import *
-from tkinter import ttk, filedialog, messagebox
-from Cryptodome.Cipher import AES
-from Cryptodome.Random import get_random_bytes
-import qrcode
-from PIL import Image, ImageTk
-import piexif
+try:
+    from tkinter import *
+    from tkinter import ttk, filedialog, messagebox
+    
+except ImportError:
+    print("tkinter library is not installed.")
+    input("Press Enter to exit...")
+    exit()
+try:
+    from Cryptodome.Cipher import AES
+    from Cryptodome.Random import get_random_bytes
+
+except ImportError:
+    print("Cryptodome library is not installed.")
+    input("Press Enter to exit...")
+    exit()
+try:
+    import qrcode
+
+except ImportError:
+    print("qrcode library is not installed.")
+    input("Press Enter to continue anyway...")
+    
+try:
+    from PIL import Image, ImageTk
+
+except ImportError:
+    print("PIL library is not installed.")
+    input("Press Enter to continue anyway...")
+
+try:
+    import piexif
+
+except ImportError:
+    print("piexif library is not installed.")
+    input("Press Enter to continue anyway...")
+
 
 def generate_random_key():
     key_str = get_random_bytes(16).hex()
