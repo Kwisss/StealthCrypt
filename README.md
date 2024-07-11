@@ -7,10 +7,7 @@ The script allows the user to encrypt and decrypt a message using the AES encryp
 it can generate a random key, which is then displayed as a QR code for savekeeping. The user can also embed the encrypted message into an image and extract it from the image.
 
 
-
-![screenshot](screenshot.png)
-
-Here's a breakdown of each section of the code:
+## Here's a breakdown of each section of the code:
 
 1. The necessary libraries are imported at the beginning of the script.
 
@@ -32,13 +29,21 @@ Here's a breakdown of each section of the code:
 
 10. The main GUI is created using the tkinter library. The GUI consists of several frames, including a key frame, a message frame, a decrypted message frame, a QR code frame, and an encryption/decryption frame. The encryption/decryption frame contains buttons for encrypting and decrypting messages, as well as buttons for embedding and extracting messages from images. The GUI is displayed using the `mainloop` method of the root window.
 
+## Screenshot
+
+![screenshot](screenshot.png)
+
 > [!CAUTION]
 > ### ***This application is not intended for use in critical or life-threatening situations where professional-grade encryption tools are required. In such situations, the user is advised to seek the assistance of a qualified encryption expert.***
 
 
-DISCLAIMER:
+## DISCLAIMER:
+
 This application is provided "as is" without warranty of any kind, either express or implied. The developer of this application shall not be held liable for any damages arising from the use of this application, including but not limited to data loss, system crashes, or security breaches.
+
 The user is responsible for ensuring the security of their encryption keys and any data encrypted using this application. The developer of this application shall not be held responsible for any unauthorized access to encrypted data.
+
 The user is responsible for complying with all applicable laws and regulations when using this application. The developer of this application shall not be held responsible for any illegal or unethical use of this application.
+
 By using this application, the user agrees to these terms and assumes all risks associated with its use.
 
