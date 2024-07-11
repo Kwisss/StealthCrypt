@@ -3,8 +3,38 @@ Encrypt and decrypt messages using the AES encryption and Steganography
 
 This code is roughly a 130 lines Python script. (excluding the messy ui code that creates a graphical user interface (GUI) using the tkinter library)
 
-The script allows the user to encrypt and decrypt a message using the AES encryption algorithm from the Cryptodome library. 
-it can generate a random key, which is then displayed as a QR code for savekeeping. The user can also embed the encrypted message into an image and extract it from the image.
+The script allows the user to encrypt and decrypt a message using the AES encryption algorithm from the Cryptodome library and embed the encrypted message into an image and extract it from the image.
+It can generate a random key, which is displayed as a QR code for savekeeping. decrypted messages can be copied to the clipboard with a click of a button.
+
+## Installation
+
+The required packages for the script are:
+* tkinter
+* Cryptodome
+* qrcode
+* Pillow
+* piexif
+
+These packages are listed in the `requirements.txt` file, which can be installed using pip as shown below.
+
+
+To install and run the application, Clone the repository to your local machine and Install the required packages using pip:
+```
+git clone https://github.com/your-username/StealthCrypt.git
+cd StealthCrypt
+pip install -r requirements.txt
+```
+
+## Usage
+
+To use the application, follow these steps:
+
+1. Run the script using the command `python StealthCrypt.py`.
+2. Enter a key in the key entry field or generate a random key using the "Generate random key" button.
+3. Enter a message in the message entry field.
+4. Click the "Encrypt" button to encrypt the message using the AES encryption algorithm to a txtfile, To embed the encrypted message into an image, click the "Embed in image" button and select an image file.
+7. To extract the encrypted message from an txt file click the decrypt,  To extract the encrypted message from an image, click the "Extract from image" button and select an image file. The encrypted message will be displayed in the decrypted message frame.
+8. The decrypted message will be displayed in the decrypted message frame, To copy the decrypted message to the clipboard, click the "Copy to clipboard" button.
 
 
 ## Here's a breakdown of each section of the code:
