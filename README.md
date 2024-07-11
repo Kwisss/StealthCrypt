@@ -1,8 +1,10 @@
 # StealthCrypt
 Encrypt and decrypt messages using the AES encryption and Steganography
 
-This code is a Python script that creates a graphical user interface (GUI) using the tkinter library. The script allows the user to encrypt and decrypt a message using the AES encryption algorithm from the Cryptodome library. 
-The user can also generate a random key, which is then displayed as a QR code for savekeeping. The user can also embed the encrypted message into an image and extract it from the image.
+This code is roughly a 130 lines Python script. (excluding the messy ui code that creates a graphical user interface (GUI) using the tkinter library)
+
+The script allows the user to encrypt and decrypt a message using the AES encryption algorithm from the Cryptodome library. 
+it can generate a random key, which is then displayed as a QR code for savekeeping. The user can also embed the encrypted message into an image and extract it from the image.
 
 Here's a breakdown of each section of the code:
 
