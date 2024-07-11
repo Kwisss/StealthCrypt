@@ -6,6 +6,10 @@ This code is roughly a 130 lines Python script. (excluding the messy ui code tha
 The script allows the user to encrypt and decrypt a message using the AES encryption algorithm from the Cryptodome library. 
 it can generate a random key, which is then displayed as a QR code for savekeeping. The user can also embed the encrypted message into an image and extract it from the image.
 
+
+
+![screenshot](screenshot.png)
+
 Here's a breakdown of each section of the code:
 
 1. The necessary libraries are imported at the beginning of the script.
