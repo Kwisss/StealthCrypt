@@ -43,4 +43,5 @@ The user is responsible for complying with all applicable laws and regulations w
 
 By using this application, the user agrees to these terms and assumes all risks associated with its use.
 
-## This application is not intended for use in critical or life-threatening situations where professional-grade encryption tools are required. In such situations, the user is advised to seek the assistance of a qualified encryption expert.
+
+### ***This application is not intended for use in critical or life-threatening situations where professional-grade encryption tools are required. In such situations, the user is advised to seek the assistance of a qualified encryption expert.***
