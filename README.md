@@ -17,7 +17,7 @@ it can generate a random key, which is then displayed as a QR code for savekeepi
 
 4. The `encrypt_message` function encrypts the message entered by the user using the AES encryption algorithm. It checks if the length of the key is valid and then creates a new AES cipher object with the key and a random nonce. The message is then encrypted using the cipher object and the resulting cipher text is returned. If the `save_to_file` parameter is set to True, the encrypted message is saved to a file using the `filedialog` library.
 
-5. The `embed_in_image` function embeds the encrypted message into an image selected by the user using the `filedialog` library. It first checks if the image is large enough to contain the data and then modifies the least significant bit of each pixel in the image to contain a bit of the data. The modified image is then saved to a file.
+5. The `embed_in_image` function embeds the encrypted message into an image selected by the user using the `filedialog` library. It first checks if the image is large enough to contain the data and then modifies the least significant bit of each pixel in the image to contain a bit of the data. The modified image is then saved to a file and tries to include it's original meta-data.
 
 6. The `decrypt_message` function decrypts an encrypted message that has been saved to a file using the `filedialog` library. It checks if the length of the key is valid and then creates a new AES cipher object with the key and the nonce from the encrypted message. The cipher text is then decrypted using the cipher object and the resulting plain text is displayed in the decrypted message frame.
 
